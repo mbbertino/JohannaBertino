@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JohannaBertino</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/johanna-bertino.css">
+  </head>
+  <body>
+    <script>
+      window.JohannaBertinoENV = {{ENV}};
+      window.EmberENV = window.JohannaBertinoENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/johanna-bertino.js"></script>
+    <script>
+      window.JohannaBertino = require('johanna-bertino/app')['default'].create(JohannaBertinoENV.APP);
+    </script>
+  </body>
+</html>

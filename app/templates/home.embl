@@ -63,7 +63,9 @@
 	.container
 		.row
 			.col-xs-12
-				h1.text-center.text-uppercase.section-header My Favorite Recipes
+				h1.text-center.text-uppercase.section-header
+					| My Favorite Recipes 
+					a.small more?
 				/ h4.text-center These are just a few of my favorite recipes
 
 			.col-md-3.col-sm-6.gallery-img

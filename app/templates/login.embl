@@ -1,0 +1,7 @@
+.container
+	form.form-signin.col-sm-4.col-sm-offset-4
+		h2.form-signin-heading Please Login
+		=input .form-control value=email type="email" placeholder="Email Address" 
+		=input .form-control value=email type="Password" placeholder="Password"
+		p.help-block Have a good day!
+		button.btn.btn-primary.btn-block type="submit" Login

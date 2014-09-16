@@ -1,5 +1,5 @@
 
-.navbar.navbar-inverse.navbar-fixed-top role="navigation"
+.section.navbar.navbar-inverse.navbar-fixed-top role="navigation"
 	.container
 		.navbar-header
 			button.navbar-toggle type="button" data-toggle="collapse" data-target=".navbar-inverse-collapse"
@@ -10,18 +10,16 @@
 		.navbar-collapse.collapse.navbar-inverse-collapse
 			ul.nav.navbar-nav.navbar-right
 				li: a href="#who" Who Am I
-				li: a href="#skills" My Skills
-				li: a href="#recipes" Fav Recipes
-				li: a href="#contact" Contact Me
-				li: link-to "login" | Login
+				li: a href="#skills" What I Do
+				li: a href="#recipes" My Favorite Recipes
+				li: a href="#connect" Connect With Me
 
-.section.who#who.jumbotron
+.section.who#who
 	.container
 		.row
-			.col-md-5
+			.col-md-4
 				img.poloroid.img-responsive src="/assets/images/head3.jpg"
-			.col-md-7.jumbo-copy
-				h1 i am 
+			.col-md-8.jumbo-copy.text-center				
 				h1 johanna bertino RD, LD
 				p.lead
 					|	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -30,15 +28,17 @@
 					|	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,						
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	
-				a.btn.btn-primary.btn-large href="mailto:jbertino@rileytherapy.com" email me					
+				.col-sm-6.col-sm-offset-3
+					a.btn.btn-primary.btn-block href="mailto:jbertino@rileytherapy.com" email me					
 
 .section.skills#skills
 	.container
 		.row
+			h1.text-center.text-uppercase.section-header What I Do
 			.col-md-4
 				.panel.panel-primary
 					.panel-heading
-						' experience first
+						h3.text-center Eating disorders
 					.panel-body
 						' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -46,48 +46,68 @@
 			.col-md-4
 				.panel.panel-primary
 					.panel-heading
-						' experience first
+						h3.text-center Weight Loss
 					.panel-body
 						' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			.col-md-4
 				.panel.panel-primary
 					.panel-heading
-						' experience first
+						h3.text-center Dietetic Programming
 					.panel-body
 						' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
 
 .section.recipes#recipes
 	.container
 		.row
-			.col-md-4
-				.panel.panel-primary
-					.panel-heading
-						' experience first
-					.panel-body
-						' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						
-			.col-md-4
-				.panel.panel-primary
-					.panel-heading
-						' experience first
-					.panel-body
-						' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			.col-md-4
-				.panel.panel-primary
-					.panel-heading
-						' experience first
-					.panel-body
-						' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			.col-xs-12
+				h1.text-center.text-uppercase.section-header My Favorite Recipes
+				/ h4.text-center These are just a few of my favorite recipes
+
+			.col-md-3.col-sm-6.gallery-img
+				img.img-responsive.recipe-gallery-img src="/assets/images/cake.jpg"
+
+			.col-md-3.col-sm-6.gallery-img
+				img.img-responsive.recipe-gallery-img src="/assets/images/cake.jpg"
+
+			.col-md-3.col-sm-6.gallery-img
+				img.img-responsive.recipe-gallery-img src="/assets/images/cake.jpg"
+
+			.col-md-3.col-sm-6.gallery-img
+				img.img-responsive.recipe-gallery-img src="/assets/images/cake.jpg"
 
 
+.section.quote#quote
+	.container
+		.row.text-center
+			h1.col-xs-12.text-uppercase.section-header quote for vistors
+			p.col-xs-12
+				| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess
 
-.section.contact#contact
+
+.section.connect#connect
 	.container
 		.row
+			h1.col-xs-12.text-center.text-uppercase.section-header 
+				| connect with 
+				link-to "login" | me
+				/ this is where you click to login to submit more recipes !!!
+			.col-sm-3.text-center
+				=fa-icon "facebook" size="5x"
+					
+			.col-sm-3.text-center
+				=fa-icon "pinterest" size="5x"
 
-
+			.col-sm-3.text-center
+				=fa-icon "linkedin" size="5x"
+					
+			.col-sm-3.text-center
+				=fa-icon "instagram" size="5x"
+			
+			h4.col-xs-12.text-center
+				a href="mailto:jbertino@rileytherapy.com" jbertino@rileytherapy.com

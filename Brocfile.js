@@ -1,20 +1,18 @@
 /* global require, module */
 
-// Link for bootstrap/emblem/stylus
-// http://www.ember-cli.com/
-
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp();
 
-// app.import('bower_components/bootstrap/dist/css/bootstrap.css');
-app.import('vendor/jasny-bootstrap/dist/css/jasny-bootstrap.min.css');
-app.import('vendor/jasny-bootstrap/dist/js/jasny-bootstrap.min.js');
-app.import('vendor/bootstrap/dist/js/bootstrap.js');
-app.import('vendor/bootstrap/dist/css/bootstrap.min.css');
 // Use `app.import` to add additional libraries to the generated
 // output files.
-//
+
+app.import('vendor/bootstrap/dist/js/bootstrap.js');
+app.import('vendor/bootstrap/dist/css/bootstrap.min.css');
+
+app.import('vendor/jasny-bootstrap/dist/css/jasny-bootstrap.min.css');
+app.import('vendor/jasny-bootstrap/dist/js/jasny-bootstrap.min.js');
+
 // If you need to use different assets in different
 // environments, specify an object as the first parameter. That
 // object's keys should be the environment name and the values

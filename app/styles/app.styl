@@ -3,30 +3,40 @@
 
 
 @import 'vendor/nib'
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,300,400,700);
 
 body
+	font-family: 'Raleway', sans-serif;
 	padding-top 60px
 	background #fff
+
 .navbar-inverse
 	.navbar-brand
-		font-size 24px
-		color #2c3e50
+		font-size 20px
+		color #18bc9c
 		&:hover
-			color #18bc9c
+			color #2c3e50
 
 .navbar-inverse .navbar-nav>li>a
-	color #2c3e50
+	color #18bc9c
 	&:hover
-		color #18bc9c
+		color #2c3e50
 
 .navbar-inverse
 	background #fff
 
 .row
-	padding 120px 0px
-	
+	padding 100px 0px
+
+
+.section-header
+	font-weight 300
+	letter-spacing 5px
+	margin-bottom 40px
+
 .who
 	background #18bc9c
+	
 	.poloroid
 		margin 0 auto
 		background #fff
@@ -37,8 +47,10 @@ body
 		h1	 
 			text-transform	uppercase
 			font-size 50px
+			margin 5px 0px 15px
 		p 
 			font-size 18px
+			margin-bottom 30px
 		.lead
 			font-size 24px
 			font-weight bold
@@ -52,6 +64,54 @@ body
 
 .skills
 	background #fff
+	// background #2c3e50
+	.section-header
+		border-bottom 1px solid #2c3e50
 
 .recipes
 	background #2c3e50
+	color #fff
+
+	.section-header
+		border-bottom 1px solid #fff
+
+	h4
+		letter-spacing 3px
+		margin-bottom 30px
+
+	.gallery-img
+		padding 5px 5px 0px	
+		&:hover
+			cursor pointer
+		
+		.recipe-gallery-img
+			margin 5px auto 0px
+			border-radius 
+
+		.well
+			border-radius 0
+			// background #18bc9c
+			background #fff
+			color #18bc9c
+			h4 
+				margin 0px 0px
+
+.quote
+	background #18bc9c
+	color #fff
+	.section-header
+		border-bottom 1px solid #fff
+
+
+.connect
+	color #2c3e50
+	.section-header
+		border-bottom 1px solid #2c3e50
+	h4
+		margin 40px 0px 20px
+	i, a
+		color #2c3e50
+		&:hover
+			text-decoration none
+			cursor pointer
+			color #18bc9c

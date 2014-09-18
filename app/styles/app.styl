@@ -5,6 +5,8 @@
 @import 'vendor/nib'
 @import url(http://fonts.googleapis.com/css?family=Raleway:200,300,400,700);
 
+
+
 body
 	font-family: 'Raleway', sans-serif;
 	padding-top 60px
@@ -24,9 +26,10 @@ body
 
 .navbar-inverse
 	background #fff
+	box-shadow 0px 3px 10px #2c3e50
 
 .row
-	padding 100px 0px
+	padding 115px 0px
 
 
 .section-header
@@ -35,6 +38,7 @@ body
 	margin-bottom 40px
 
 .who
+	// background: linear-gradient(bottom, 1% #fff, 99% #18bc9c)
 	background #18bc9c
 	
 	.poloroid
@@ -79,22 +83,29 @@ body
 		letter-spacing 3px
 		margin-bottom 30px
 
-	.gallery-img
-		padding 5px 5px 0px	
-		&:hover
-			cursor pointer
-		
-		.recipe-gallery-img
-			margin 5px auto 0px
-			border-radius 
+	.galler-img-container
+		padding 15px
 
-		.well
-			border-radius 0
-			// background #18bc9c
-			background #fff
-			color #18bc9c
-			h4 
-				margin 0px 0px
+		.gallery-img
+			padding 0px	
+
+			&:hover	
+				box-shadow 0px 0px 15px #18bc9c
+				cursor pointer
+			
+			.gallery-link
+				margin 5px auto 0px
+
+			.gallery-caption
+				padding 15px 0px 15px
+				background #fff
+				color #2c3e50
+				h4 
+					font-weight bold
+					margin 0px 0px 5px
+				p
+					margin-bottom 0px
+					font-style italic
 
 .quote
 	background #18bc9c

@@ -63,22 +63,66 @@
 	.container
 		.row
 			.col-xs-12
-				h1.text-center.text-uppercase.section-header
+				h1.text-center.text-uppercase.section-header 
 					| My Favorite Recipes 
-					a.small more?
-				/ h4.text-center These are just a few of my favorite recipes
+					a.small more?		
 
-			.col-md-3.col-sm-6.gallery-img
-				img.img-responsive.recipe-gallery-img src="/assets/images/cake.jpg"
+			.col-md-4.col-sm-6.col-xs-12.galler-img-container
+				.gallery-img.col-xs-12
+					/ this needs to be changed to a link-to helper once I hook up to parse
+					a.gallery-link 
+						img.img-responsive src="/assets/images/food1.png"
+					.gallery-caption.text-center
+						h4 Hello Image
+						p More text for the picture
 
-			.col-md-3.col-sm-6.gallery-img
-				img.img-responsive.recipe-gallery-img src="/assets/images/cake.jpg"
+			.col-md-4.col-sm-6.col-xs-12.galler-img-container
+				.gallery-img.col-xs-12
+					/ this needs to be changed to a link-to helper once I hook up to parse
+					a.gallery-link 
+						img.img-responsive src="/assets/images/food2.png"
+					.gallery-caption.text-center
+						h4 Hello Image
+						p More text for the picture
 
-			.col-md-3.col-sm-6.gallery-img
-				img.img-responsive.recipe-gallery-img src="/assets/images/cake.jpg"
+			.col-md-4.col-sm-6.col-xs-12.galler-img-container
+				.gallery-img.col-xs-12
+					/ this needs to be changed to a link-to helper once I hook up to parse
+					a.gallery-link 
+						img.img-responsive src="/assets/images/food3.png"
+					.gallery-caption.text-center
+						h4 Hello Image
+						p More text for the picture
+				
+			.col-md-4.col-sm-6.col-xs-12.galler-img-container
+				.gallery-img.col-xs-12
+					/ this needs to be changed to a link-to helper once I hook up to parse
+					a.gallery-link 
+						img.img-responsive src="/assets/images/food4.png"
+					.gallery-caption.text-center
+						h4 Hello Image
+						p More text for the picture
 
-			.col-md-3.col-sm-6.gallery-img
-				img.img-responsive.recipe-gallery-img src="/assets/images/cake.jpg"
+			.col-md-4.col-sm-6.col-xs-12.galler-img-container
+				.gallery-img.col-xs-12
+					/ this needs to be changed to a link-to helper once I hook up to parse
+					a.gallery-link 
+						img.img-responsive src="/assets/images/food5.png"
+					.gallery-caption.text-center
+						h4 Hello Image
+						p More text for the picture
+
+			.col-md-4.col-sm-6.col-xs-12.galler-img-container
+				.gallery-img.col-xs-12
+					/ this needs to be changed to a link-to helper once I hook up to parse
+					a.gallery-link 
+						img.img-responsive src="/assets/images/food6.png"
+					.gallery-caption.text-center
+						h4 Hello Image
+						p More text for the picture
+
+
+
 
 
 .section.quote#quote
@@ -99,17 +143,17 @@
 				| connect with 
 				link-to "login" | me
 				/ this is where you click to login to submit more recipes !!!
-			.col-sm-3.text-center
-				=fa-icon "facebook" size="5x"
+			.col-xs-3.text-center
+				=fa-icon "facebook" size="4x"
 					
-			.col-sm-3.text-center
-				=fa-icon "pinterest" size="5x"
+			.col-xs-3.text-center
+				=fa-icon "pinterest" size="4x"
 
-			.col-sm-3.text-center
-				=fa-icon "linkedin" size="5x"
+			.col-xs-3.text-center
+				=fa-icon "linkedin" size="4x"
 					
-			.col-sm-3.text-center
-				=fa-icon "instagram" size="5x"
+			.col-xs-3.text-center
+				=fa-icon "instagram" size="4x"
 			
 			h4.col-xs-12.text-center
 				a href="mailto:jbertino@rileytherapy.com" jbertino@rileytherapy.com

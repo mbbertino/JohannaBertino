@@ -1,7 +1,9 @@
 import Ember from 'ember';
 
 var Router = Ember.Router.extend({
-  location: JohannaBertinoENV.locationType
+  // location: JohannaBertinoENV.locationType
+  location: 'hash',
+  rootURL: JohannaBertinoENV.rootURL
 });
 
 Router.map(function() {
